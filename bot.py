@@ -58,7 +58,7 @@ async def on_message(message):
 
 # Load token from .env
 load_dotenv()
-token = os.getenv("DISCORD_TOKEN")
+token = os.getenv("discord_token")
 
 if not token:
     raise ValueError("❌ No DISCORD_TOKEN found in .env file")

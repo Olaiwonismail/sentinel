@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 # Load API key
 load_dotenv()
-API_KEY = os.getenv("PERSPECTIVE_API_KEY")
+API_KEY = os.getenv("perspective_api_key")
 if not API_KEY:
     raise ValueError("❌ No PERSPECTIVE_API_KEY found in .env file")
 
